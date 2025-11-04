@@ -74,6 +74,73 @@ section h3 {
   margin-bottom: 8px;
 }
 
+/* New: participants section styling */
+.participants-section {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #eee;
+}
+
+.participants-section p {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.participants-list {
+  /* hide default bullets and reset left padding so we can control layout */
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  max-height: 120px;
+  overflow: auto;
+  padding-right: 8px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Participant row: inline email + small delete icon */
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 4px 6px;
+}
+
+.participant-email {
+  flex: 1 1 auto;
+  word-break: break-all;
+}
+
+.unregister-btn {
+  flex: 0 0 auto;
+  background: transparent;
+  border: none;
+  color: #c62828; /* red */
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.unregister-btn:hover {
+  background-color: rgba(198, 40, 40, 0.08);
+}
+
+.participant-item {
+  padding: 4px 0;
+  border-radius: 3px;
+}
+
+/* subtle empty state */
+.participant-item.empty {
+  color: #888;
+  font-style: italic;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
